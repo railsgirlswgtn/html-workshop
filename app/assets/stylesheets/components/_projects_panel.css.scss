@@ -1,0 +1,34 @@
+.projects-panel {
+  min-height: 100%;
+  padding-top: 20%;
+
+  .project-buttons {
+    list-style-type: none;
+  }
+  .project-button {
+    height: 80px;
+    border: 1px solid #aaa;
+
+    > a {
+      height: 80px;
+      vertical-align: middle;
+      display: inline-block;
+      padding-top: 30px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .project-panels {
+    border: 1px solid #aaa;
+    height: 320px;
+  }
+
+  .project-panel {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

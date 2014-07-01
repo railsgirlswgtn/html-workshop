@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+  $(document).on('click', '.project-button', function(event) {
+    event.preventDefault();
+    $('.project-panel').removeClass('active');
+    $($(event.target).attr('href')).addClass('active');
+  });
+});
