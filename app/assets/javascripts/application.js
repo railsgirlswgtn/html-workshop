@@ -16,9 +16,9 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $(document).on('click', '.project-button', function(event) {
+  $(document).on('click', '.video-button', function(event) {
     event.preventDefault();
-    $('.project-panel').removeClass('active');
+    $('.video-panel').removeClass('active');
     $($(event.target).attr('href')).addClass('active');
   });
 });

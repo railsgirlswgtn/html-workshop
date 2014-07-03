@@ -1,11 +1,11 @@
-.projects-panel {
+.videos-panel {
   min-height: 100%;
   padding-top: 20%;
 
-  .project-buttons {
+  .video-buttons {
     list-style-type: none;
   }
-  .project-button {
+  .video-button {
     height: 80px;
     border: 1px solid #aaa;
 
@@ -19,12 +19,12 @@
     }
   }
 
-  .project-panels {
+  .video-panels {
     border: 1px solid #aaa;
     height: 320px;
   }
 
-  .project-panel {
+  .video-panel {
     display: none;
 
     &.active {
