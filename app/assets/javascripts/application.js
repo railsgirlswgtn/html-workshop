@@ -18,7 +18,10 @@
 $(document).ready(function(){
   $(document).on('click', '.video-button', function(event) {
     event.preventDefault();
+  	var $target = $(event.target).attr('href');
     $('.video-panel').removeClass('active');
-    $($(event.target).attr('href')).addClass('active');
+    $('.video-button').removeClass('active');
+    $(event.target).addClass('active');
+    $($target).addClass('active');
   });
 });
